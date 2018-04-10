@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Module demo</title>
+    </head>
+    <body>
+        Enter a string and the number of characters to ellipsize it after
+        <h4><label for="str">String</label></h4>
+        <textarea id="str" rows="5" cols="80"></textarea>
+
+        <h4><label for="numChars">Cutoff</label></h4>
+        <input type="number" id="numChars" />
+
+        <br /><br />
+        <input type="button" id="btn-ellipsize" value="Ellipsize" />
+
+        <h4><label for="output">Ellipsized string</label></h4>
+        <output id="output"></output>
+
+        <!-- 
+            A script file will be treated as a module if it is included using type="module".
+            A module can import other modules
+
+            Notes
+            * Since modules are fetched asynchronously, the file:// protocol will not work when loading this file - A web server is to be started and this file should be served via that server
+            * Only very latest versions of modern browsers support JS modules - check out your browser's support for JS modules if this example does not work
+        -->
+        <!--
+            Step 1: Use type="module" when including a JavaScript file as a module
+        -->
+        <script src="10-module-demo.js"></script>
+    </body>
+</html>
