@@ -20,7 +20,7 @@ At the end of this bootcamp, you will build a blogging application using Angular
 ## Pre-requisites
 - HTML, CSS and JavaScript knowledge
 - Very basic algorithms and data structures knowledge (traversing and using arrays, using objects in JavaScript)
-- Bootstrap knowledge is a plus, but not necessary
+- Bootstrap knowledge is a plus, but not necessary  
 __Note__: Knowledge of Angular JS (Angular v1.x) or Angular 2/4 is NOT required.
 
 ## Software and Tools
