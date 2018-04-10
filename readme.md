@@ -1,21 +1,21 @@
 # Angular Training
-Angular training material for training at [[place]] ([[dates]])
+Angular training material for training at Harman, Bangalore (April 11 - 13, 2018)
 
 # About Angular
 Google's Angular framework, is a much sought-after skill today. It helps build Single Page Applications 
 (SPAs) with ease. It is a full-fledged framework that takes care of all aspects of SPA development like templating, data-binding (reactivity), routing and deep-linking etc.
 
 ## Session Schedule
-- Dates and time of training
+- April 11 - 13, 2018 (9:30 AM - 6:00 PM)
 
 ## Link to join the sessions
-[Zoom Meeting Link to join the sessions]()
+[Zoom Meeting Link to join the sessions](https://zoom.us/j/383871446)
 
 ## Capstone Project
 At the end of this bootcamp, you will build a blogging application using Angular. A backend server shall be provided. The app will list blog articles, allow one to post articles, and also edit/delete articles.
 
 ## Video Recordings &amp; Discussion Forum
-[Video recordings of sessions with Discussion forum to post questions]()
+[Video recordings of sessions]()
 
 ## Pre-requisites
 - HTML, CSS and JavaScript knowledge
