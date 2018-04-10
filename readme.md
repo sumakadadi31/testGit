@@ -6,7 +6,7 @@ Google's Angular framework, is a much sought-after skill today. It helps build S
 (SPAs) with ease. It is a full-fledged framework that takes care of all aspects of SPA development like templating, data-binding (reactivity), routing and deep-linking etc.
 
 ## Session Schedule
-- April 11 - 13, 2018 (9:30 AM - 6:00 PM)
+April 11 - 13, 2018 (9:30 AM - 6:00 PM)
 
 ## Link to join the sessions
 [Zoom Meeting Link to join the sessions](https://zoom.us/j/383871446)
