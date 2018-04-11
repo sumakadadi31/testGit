@@ -2,10 +2,10 @@
 Angular training material for training at Harman, Bangalore (April 11 - 13, 2018)
 
 ## Before start of Angular session
-1. Please share your GitHub username with me. If you don't have a GitHub account, please create one and share with me.
+1. Please share your GitHub username with me (sheet is passed in room). If you don't have a GitHub account, please create one and share with me.
 2. Once I add you to the GitHub project for this training you will get an invitation by Email. Please accept it. You can also view the invitation by logging into your GitHub account and viewing invitations.
 
-All training material will be shared through GitHub and this is necessary
+All training material will be shared through GitHub and this is necessary.
 
 # About Angular
 Google's Angular framework, is a much sought-after skill today. It helps build Single Page Applications 
@@ -37,8 +37,22 @@ __Note__: Knowledge of Angular JS (Angular v1.x) or Angular 2/4 is NOT required.
     - HTML Snippets by Mohamed Abusaid
     - Lorem ipsum by Daniel Imms
     - Path Intellisense by Christian Kohler
-- [Node.js](https://nodejs.org)
-- [Chrome Browser](https://www.google.com/chrome/browser/desktop/index.html) - Download and install this. Chrome has the best developer tools and is highly recommended for learning web development.
+- Git CLI on participant systems and GitHub account for every participant(to be created individually by participant).  
+Git CLI download: https://git-scm.com/downloads
+GitHub link for account creation: https://github.com/join?source=header-home
+ 
+ Once an account is created by everyone, the list of GitHub user names needs to be shared with me - I will add them to the GitHub repository before start of training.
+
+- Node.js needs to be installed on all systems. This will also install npm. However, the proxy server details may need to be configured to enable npm access the npm registry (this registry is required to download Node modules required to build Node applications - Angular is available as node modules and hence the requirement).
+Node.js https://nodejs.org/en/download/
+To configure the proxy for npm these articles will be helpful: https://jjasonclark.com/how-to-setup-node-behind-web-proxy/
+  
+https://forum.freecodecamp.org/t/npm-behind-a-proxy-server/19386
+
+- Optional download: It will save time if Angular CLI is installed before start of training. The details can be found here (only Step 1 / 4 - rest of steps are to create the Angular app and shall be done in the training)
+https://cli.angular.io/
+
+4. [Chrome Browser](https://www.google.com/chrome/browser/desktop/index.html) - Download and install this. Chrome has the best developer tools and is highly recommended for learning web development.
 
 ## References
 - Pre-requisites
