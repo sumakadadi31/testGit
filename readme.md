@@ -1,6 +1,12 @@
 # Angular Training
 Angular training material for training at Harman, Bangalore (April 11 - 13, 2018)
 
+## Before start of Angular session
+1. Please share your GitHub username with me. If you don't have a GitHub account, please create one and share with me.
+2. Once I add you to the GitHub project for this training you will get an invitation by Email. Please accept it. You can also view the invitation by logging into your GitHub account and viewing invitations.
+
+All training material will be shared through GitHub and this is necessary
+
 # About Angular
 Google's Angular framework, is a much sought-after skill today. It helps build Single Page Applications 
 (SPAs) with ease. It is a full-fledged framework that takes care of all aspects of SPA development like templating, data-binding (reactivity), routing and deep-linking etc.
