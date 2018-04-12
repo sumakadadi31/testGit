@@ -43,13 +43,17 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let product of filteredProducts">
+            <tr *ngFor="let product of filteredProducts; let i = index;">
                 <td><img *ngIf="isImageShown === true" [src]="product.imageUrl" [style.width.px]="imageWidth" [style.border]="imageBorder" [style.padding.px]="imagePadding" /></td>
                 <td>{{product.name}}</td>
                 <td>{{product.code}}</td>
                 <td>{{product.description}}</td>
                 <td>{{product.price}}</td>
-                <td>{{product.starRating}}</td>
+                <td>
+                    <app-star-rating [rating]=product.starRating (ratingChange)="updateProductRating( $event, product )">
+                    </app-star-rating>
+                    <a (click)="logEventObject( $event ); logProduct( product, i );">Up</a>
+                </td>
             </tr>
         </tbody>
     </table>

@@ -41,7 +41,6 @@ export class ProductListComponent implements OnInit {
 
     toggleImageDisplay() {
         this.isImageShown = !this.isImageShown;
-        this.filterKey = 'sdvsadva';
     }
 
     // Exercise:
@@ -49,7 +48,21 @@ export class ProductListComponent implements OnInit {
     // 2. Take into account product description too when filtering
     filterProducts() {
         this.filteredProducts = this.products.filter(( product ) => {
-            return product.name.indexOf( this.filterKey ) !== -1;
+            return product.name.toLowerCase().indexOf( this.filterKey.toLowerCase() ) !== -1;
         });
+    }
+
+    // this is how we use event object
+    logEventObject( ev ) {
+        console.log( ev.target );
+    }
+
+    logProduct( product, index ) {
+        console.log( product.name );
+        console.log( index );
+    }
+
+    updateProductRating( $event, product ) {
+        product.starRating = $event;
     }
 }
