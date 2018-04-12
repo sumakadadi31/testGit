@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "outDir": "02-typescript-basics/dist",
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "target": "es6"
+    },
+    "include": [
+        "02-typescript-basics/**/*"
+    ],
+    "exclude": [
+    ]
+}
