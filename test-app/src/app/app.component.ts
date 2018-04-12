@@ -1,10 +1,24 @@
 import { Component } from '@angular/core';
+import { Person } from '../common/utils';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    /*templateUrl: './app.component.html',*/
+    template: ` // inline alternative to templateUrl
+        <h1>{{title}}</h1>
+    `,
+    styles: [ // inline alternative to styleUrls
+        `
+        h1 {
+            color: crimson;
+        }
+        `
+    ],
+    styleUrls: [
+        './app.component.css'
+    ],
+    selector: 'app-root'
 })
 export class AppComponent {
-  title = 'app';
+    title : string = 'Hello, Angular';
+    person: Person = new Person( 'John', 32 );
 }
