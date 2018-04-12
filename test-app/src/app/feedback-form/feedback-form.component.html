@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="well">
+        <h2>Leave feedback for the app</h2>
+        <hr />
+        <form class="form-horizontal" #feedbackForm="ngForm" novalidate (ngSubmit)="sendFeedback( feedbackForm.value );">
+            <div class="form-group" [ngClass]="{ 'has-error': emailid1.invalid && (emailid1.touched || emailid1.dirty) }">
+                <label for="emailid" class="col-sm-3 control-label">Your email id</label>
+                <div class="col-sm-9">
+                    <input type="text" id="emailid" name="emailid" class="form-control" [(ngModel)]="emailid" required #emailid1="ngModel" />
+                    <div class="text-danger" *ngIf="emailid1.invalid && (emailid1.touched || emailid1.dirty)">Email id is required</div>
+                </div>
+            </div>
+            <!--
+            Valid: {{emailid1.valid}}
+            Dirty: {{emailid1.dirty}}
+            Touched: {{emailid1.touched}}
+            -->
+            <div class="form-group">
+                <label for="emailid2" class="col-sm-3 control-label">Your email id</label>
+                <div class="col-sm-9">
+                    <input type="text" id="emailid2" name="emailid2" class="form-control" ngModel required />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                    <input type="reset" value="Reset" class="btn btn-default" />
+                    <input type="submit" value="Submit" class="btn btn-primary" [disabled]="feedbackForm.invalid" />
+                </div>
+            </div>
+            <br /> <br/>
+            <!-- Valid: {{feedbackForm.valid}} -->
+            <!--
+                Invalid: {{feedbackForm.invalid}}
+            -->
+            <!-- Dirty: {{feedbackForm.dirty}} -->
+            <!--
+                Pristine: {{feedbackForm.pristine}}
+            -->
+            <!-- Touched: {{feedbackForm.touched}} -->
+            <!--
+                Untouched: {{feedbackForm.untouched}}
+            -->
+        </form>
+    </div>
+</div>

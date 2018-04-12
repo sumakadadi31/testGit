@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { FeedbackFormComponent } from './feedback-form/feedback-form.component';
 
 @NgModule({
     imports: [
@@ -13,12 +14,13 @@ import { ProductListComponent } from './product-list/product-list.component';
     ],
     declarations: [
         AppComponent,
-        ProductListComponent
+        ProductListComponent,
+        FeedbackFormComponent
     ],
     providers: [
     ],
     exports: [
     ],
-    bootstrap: [ProductListComponent]
+    bootstrap: [FeedbackFormComponent]
 })
 export class AppModule { }

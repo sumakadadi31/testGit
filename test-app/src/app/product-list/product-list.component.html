@@ -47,8 +47,8 @@
                 <td><img *ngIf="isImageShown === true" [src]="product.imageUrl" [style.width.px]="imageWidth" [style.border]="imageBorder" [style.padding.px]="imagePadding" /></td>
                 <td>{{product.name}}</td>
                 <td>{{product.code}}</td>
-                <td>{{product.description}}</td>
-                <td>{{product.price}}</td>
+                <td>{{product.description | ellipsize:20}}</td>
+                <td>{{product.price | currency:'INR':"symbol":'1.2-2'}}</td>
                 <td>
                     <app-star-rating [rating]=product.starRating (ratingChange)="updateProductRating( $event, product )">
                     </app-star-rating>
