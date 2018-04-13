@@ -20,8 +20,11 @@ April 11 - 13, 2018 (9:30 AM - 6:00 PM)
 ## Capstone Project
 At the end of this bootcamp, you will build a blogging application using Angular. A backend server shall be provided. The app will list blog articles, allow one to post articles, and also edit/delete articles.
 
-## Video Recordings &amp; Discussion Forum
-[Video recordings of sessions]()
+## Video Recordings
+- [Day 1 - Part 1](https://s3.amazonaws.com/corporate-trainings/harman/apr-11-13-2018-angular/april-11-2018-part-1.mp4)
+- [Day 1 - Part 2](https://s3.amazonaws.com/corporate-trainings/harman/apr-11-13-2018-angular/april-11-2018-part-2.mp4)
+- [Day 2 - Part 1](https://s3.amazonaws.com/corporate-trainings/harman/apr-11-13-2018-angular/april-12-2018-part-1.mp4)
+- [Day 2 - Part 2](https://s3.amazonaws.com/corporate-trainings/harman/apr-11-13-2018-angular/april-12-2018-part-2.mp4)
 
 ## Pre-requisites
 - HTML, CSS and JavaScript knowledge
