@@ -9,14 +9,14 @@ export class AuthenticationService {
  
     login(username: string, password: string) {
         return this.http.post<any>('http://localhost:4201/login', { email: username, password: password })
-            .map(email => {
+            .map(resp => {
                 // login successful if there's a jwt token in the response
-                if (email && email.authToken) {
+                if (resp && resp.authToken) {
                     // store user details and jwt token in local storage to keep user logged in between page refreshes
-                    localStorage.setItem('currentUser', JSON.stringify(email));
+                    localStorage.setItem('currentUser', JSON.stringify(resp));
                 }
  
-                return email;
+                return resp;
             });
     }
  

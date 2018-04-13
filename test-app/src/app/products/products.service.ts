@@ -25,4 +25,10 @@ export class ProductsService {
         return this._http.get( this._productsUrl + '/' + id )
             .map( response => <IProduct>response.json() )
     }
+
+    getReviews( productId: number ) {
+        return this._http.get( this._productsUrl + '/' + productId + '/' + 'reviews' )
+            .map( ( response ) => response.json() );
+    
+    }
 }

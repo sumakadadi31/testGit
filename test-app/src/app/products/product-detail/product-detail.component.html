@@ -26,3 +26,14 @@
         </div>
     </div>
 </div>
+
+<div class="container">
+    <ul class="nav nav-pills">
+        <li role="presentation"><a [routerLink]="['./']" [routerLinkActive]="['active']">Reviews</a></li>
+        <li role="presentation"><a [routerLink]="['add']" [routerLinkActive]="['active']">Post a review</a></li>
+    </ul>
+
+    <br />
+
+    <router-outlet></router-outlet>
+</div>
