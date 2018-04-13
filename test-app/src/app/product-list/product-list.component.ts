@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { products } from '../../assets/db';
+// import { products } from '../../assets/db';
 import { IProduct } from '../../common/IProduct';
+import { ProductsService } from '../products.service';
 
 @Component({
   selector: 'app-product-list',
@@ -24,7 +25,7 @@ export class ProductListComponent implements OnInit {
     // e. price
     // f. starRating
     // Note: You have to change data variable wihin db.ts to have ONLY products array now.
-    products: IProduct[] = products;
+    products: IProduct[] = [];
     filteredProducts: IProduct[] = []; 
     imageWidth: number = 50;
     imageBorder: string = '1px solid lightgray';
@@ -32,11 +33,22 @@ export class ProductListComponent implements OnInit {
     isImageShown = true;
     filterKey: string = '';
 
-    constructor() {
+    constructor( private _productsService: ProductsService ) {
+        console.log( this._productsService );
     }
 
     ngOnInit() {
-        this.filteredProducts = this.products;
+        /* next function */ /* executed when a new event ocurs in the Observable */
+        /* error function */ /* executed when error occurs in the Observable stream */
+        /* complete function */ /* executed when Observable stream of events ends */
+        this._productsService.getProducts().subscribe(
+            ( response ) => {
+                this.products = response;
+                this.filteredProducts = this.products;
+            },
+            ( err ) => console.log( err ), 
+            () => console.log( 'completed' )
+        );
     }
 
     toggleImageDisplay() {
@@ -54,12 +66,12 @@ export class ProductListComponent implements OnInit {
 
     // this is how we use event object
     logEventObject( ev ) {
-        console.log( ev.target );
+        // console.log( ev.target );
     }
 
     logProduct( product, index ) {
-        console.log( product.name );
-        console.log( index );
+        // console.log( product.name );
+        // console.log( index );
     }
 
     updateProductRating( $event, product ) {

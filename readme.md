@@ -66,6 +66,8 @@ https://cli.angular.io/
     - ES2015
         - [Exploring ES6, by Dr. Axel Rauschmayer (Book)](http://exploringjs.com/es6/) - In-depth treatement of ES2015 features
         - [Luke Hoban's GitHub repo on ES6 features](https://github.com/lukehoban/es6features#readme) - a version can also be found in the [Babel.js site](https://babeljs.io/learn-es2015/#ecmascript-2015-features-modules)
+    - [RxJS]()
+    - [Understanding RxJS](http://rxmarbles.com/)
     - [TypeScript language site](https://www.typescriptlang.org/)
     - [Bootstrap 3.3.7 documentation](http://getbootstrap.com/docs/3.3/) - For more information on using Bootstrap v3.3.7
 - [Angular site](https://angular.io/) - Make sure to visit this for more information - do not use documentation for Angular JS v1 which is at angularjs.org

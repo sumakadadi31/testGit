@@ -18,12 +18,12 @@ export class StarRatingComponent implements OnInit, OnChanges {
     constructor() { }
 
     ngOnInit() {
-        console.log( this.rating );
+        // console.log( this.rating );
         this.setOuterWidth();
     }
 
     ngOnChanges() {
-        console.log( 'ngOnChanges' );
+        // console.log( 'ngOnChanges' );
         this.setOuterWidth();
     }
 

@@ -12,6 +12,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { RootComponent } from './root/root.component';
 import { LoginComponent } from './login/login.component';
 
+import { AuthGuard } from './shared/auth/auth.guard';
+
 @NgModule({
   declarations: [
     AboutComponent,
@@ -27,8 +29,8 @@ import { LoginComponent } from './login/login.component';
     ProductModule,
     RouterModule.forRoot([
       { path: 'login', component: LoginComponent },
-      { path: 'about', component: AboutComponent },
-      { path: 'feedback', loadChildren: 'app/feedback/feedback.module'},
+      { path: 'about', component: AboutComponent, canActivate: [AuthGuard] },
+      { path: 'feedback', loadChildren: 'app/feedback/feedback.module', canActivate: [AuthGuard] },
       { path: '**', component: PageNotFoundComponent }
     ])
   ],

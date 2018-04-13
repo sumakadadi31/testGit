@@ -12,6 +12,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductReviewFormComponent } from './product-review-form/product-review-form.component';
 import { ProductReviewsComponent } from './product-reviews/product-reviews.component';
+import { AuthGuard } from '../shared/auth/auth.guard';
 
 @NgModule({
   imports: [
@@ -20,10 +21,11 @@ import { ProductReviewsComponent } from './product-reviews/product-reviews.compo
     FormsModule,
     HttpModule,
     RouterModule.forChild([
-      { path: 'products', component: ProductListComponent },
+      { path: 'products', component: ProductListComponent, canActivate: [AuthGuard] },
       { 
         path: 'products/:id',
         component: ProductDetailComponent,
+        canActivate: [AuthGuard],
         children: [
           { path: '', component: ProductReviewsComponent },
           { path: 'reviews/add', component: ProductReviewFormComponent },
