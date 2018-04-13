@@ -69,4 +69,5 @@ https://cli.angular.io/
     - [TypeScript language site](https://www.typescriptlang.org/)
     - [Bootstrap 3.3.7 documentation](http://getbootstrap.com/docs/3.3/) - For more information on using Bootstrap v3.3.7
 - [Angular site](https://angular.io/) - Make sure to visit this for more information - do not use documentation for Angular JS v1 which is at angularjs.org
+- [Angular HTTP Guide](https://angular.io/guide/http)
 - [Angular User Registration and Login Example and Tutorial](http://jasonwatmore.com/post/2016/09/29/angular-2-user-registration-and-login-example-tutorial)
