@@ -11,11 +11,9 @@ import { IProduct } from '../common/IProduct';
 @Injectable()
 export class ProductsService {
     private _productsUrl = environment.apiBaseUrl + '/products';
-
     constructor( private _http: Http ) {
         /* this._http = _http; */ /* automatically added since we declared access specifier in the argument */
     }
-
     getProducts() : Observable<IProduct[]> {
         return this._http.get( this._productsUrl )
             .map( ( response ) => <IProduct[]>response.json() ); /* explicitly type-cast the response to IProduct array type */
