@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 // import { products } from '../../assets/db';
-import { IProduct } from '../../common/IProduct';
+import { IProduct } from '../../../common/IProduct';
 import { ProductsService } from '../products.service';
 
 @Component({

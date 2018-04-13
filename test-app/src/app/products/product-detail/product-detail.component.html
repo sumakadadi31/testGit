@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="panel" *ngIf="product">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img [src]="product.imageUrl" class="img-responsive" />
+                </div>
+    
+                <div class="col-sm-9">
+                    <h2>{{product.name}}</h2>
+                    <app-star-rating [rating]="product.starRating"></app-star-rating>
+                    <br /><br />
+                    Product id: {{product.id}}
+                    <br />
+                    Product code: {{product.code}}
+                    <br />
+                    Released on: {{product.releaseDate}}
+                    <br /><br />
+                    <p>{{product.description}}</p>
+                    <br />
+                    Price: {{product.price | currency:'GBP':true:'1.2-2'}}
+                    <br /><br />
+                    <button class="btn btn-primary" (click)="navigateToProductCatalogView()">Back to product catalog</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

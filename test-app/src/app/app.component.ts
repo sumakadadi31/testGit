@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { Person } from '../common/utils';
 
 @Component({
-    /*templateUrl: './app.component.html',*/
-    template: ` // inline alternative to templateUrl
+    templateUrl: './app.component.html',
+    /*template: ` // inline alternative to templateUrl
         <h1>{{title}}</h1>
-    `,
-    styles: [ // inline alternative to styleUrls
+    `,*/
+    // inline alternative to styleUrls
+    styles: [
         `
         h1 {
             color: crimson;
