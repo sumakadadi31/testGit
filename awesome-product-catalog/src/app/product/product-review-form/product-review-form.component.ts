@@ -9,9 +9,8 @@ import { ProductService } from '../product.service';
   styleUrls: ['./product-review-form.component.css']
 })
 export class ProductReviewFormComponent {
-  private productId: number;
-  
-  isStarRatingValid: boolean = true;
+  public productId: number;
+  public isStarRatingValid: boolean = true;
 
   constructor( private _productService: ProductService, private _activatedRoute: ActivatedRoute, private _router: Router ) {
     this._activatedRoute.parent.paramMap.subscribe(
